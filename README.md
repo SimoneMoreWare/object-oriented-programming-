@@ -16,6 +16,10 @@ Corso di object oriented programming | Politecnico di Torino
 * Java Tutorials https://docs.oracle.com/javase/tutorial/index.html
 * Eclipse IDE https://www.eclipse.org/
 * Disegnare diagrammi UML free https://app.diagrams.net/
+# Laboratori
+* laboratorio 1
+  * https://www.youtube.com/watch?v=WSpDE4sFXO4&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=39
+  * https://www.youtube.com/watch?v=7RlX7OSEXpg&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=36
 # Altre repository
 * https://github.com/LilloBarilotto/oop
 * https://github.com/Borzoneg/Programmazione-a-oggetti-a.a-2019-2020
