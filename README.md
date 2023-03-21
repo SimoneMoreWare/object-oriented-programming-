@@ -17,7 +17,7 @@ Corso di object oriented programming | Politecnico di Torino
 * Eclipse IDE https://www.eclipse.org/
 * Disegnare diagrammi UML free https://app.diagrams.net/
 # Laboratori
-* laboratorio 1
+* laboratorio 1 (university)
   * https://www.youtube.com/watch?v=WSpDE4sFXO4&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=39
   * https://www.youtube.com/watch?v=7RlX7OSEXpg&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=36
 # Altre repository
