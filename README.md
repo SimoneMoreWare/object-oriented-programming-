@@ -3,6 +3,7 @@ Corso di object oriented programming | Politecnico di Torino
 
 # Appunti 
 * https://www.notion.so/OOP-1f2440f69ca54494b6e6f136989b4a00
+* https://github.com/SimoneMoreWare/object-oriented-programming-/blob/main/APPUNTI%20OOP.txt
 # Link
 * lezioni https://www.youtube.com/playlist?list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr
 * documentazione operativa https://oop.polito.it/doc/
