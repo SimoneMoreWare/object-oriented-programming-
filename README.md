@@ -3,6 +3,8 @@ Corso di object oriented programming | Politecnico di Torino
 
 # Manuale
 * https://github.com/SimoneMoreWare/object-oriented-programming-/blob/main/DeSio.pdf
+# Lezioni
+* https://www.youtube.com/watch?v=4eSxVGx1Bcc&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=51
 # Link
 * lezioni https://www.youtube.com/playlist?list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr
 * documentazione operativa https://oop.polito.it/doc/
