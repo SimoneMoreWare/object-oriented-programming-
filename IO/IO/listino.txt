@@ -1,0 +1,3 @@
+P0001  , Olio, 5.45
+  P0002, Pomodori, ciliegini, 2.14
+P0003, Aglio, 4.56
