@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Cassa</title>
+</head>
+<body>
+<h1 style="text-align: center;">Cassa</h1>
+Realizzare il sistema software per la gestione della cassa di un
+supermercato.<br>
+Si tralasciano tutti i problemi relativi alla gestione dell&#8217;interfaccia
+utente e dell&#8217;hardware speciale (Es. lettore di codice a barre).<br>
+Tutte le classi si trovano nel package <span style="font-weight: bold;">supermercato</span>.<br>
+Si usi come punto di partenza il progetto  <a href="Cassa.zip">ZipEclipse</a>
+(<a href="/courses/tutorial/ImportZippedProject.html">istruzioni</a>).<br>
+<hr style="width: 100%; height: 2px;">
+<h2>R1: Sessione di cassa</h2>
+Quando un nuovo cliente arriva alla cassa, la cassiera passa i prodotti
+sul lettore di codice a barre, i codici dei prodotti vengono letti e i
+loro prezzi vengono sommati. In tal modo si incrementa il totale
+dovuto.<br>
+La classe <span style="font-weight: bold;">Cassa </span>racchiude
+tutte le funzionalit&agrave;. E' possibile definire il listono dei
+prodotti tramite il metodo <span style="font-weight: bold;">aggiungiDescrizioneProdotto()</span>
+che riceve come parametri il codice del prodotto, il nome ed il prezzo.<br>
+Un esempio di descrizione di prodotti &egrave;:<br>
+<br>
+<code></code>
+<table border="1" cellpadding="5" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;">Codice<br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">Nome<br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">Prezzo<br>
+      </td>
+    </tr>
+    <tr>
+      <td>P001 </td>
+      <td>Acciughe </td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>P002 </td>
+      <td>Aglio </td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>P003 </td>
+      <td>Olio </td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+La lettura di un codice di prodotto viene simulata chiamando il metodo <span
+ style="font-weight: bold;">leggi()</span> della classe <span
+ style="font-weight: bold;">Cassa</span>.<br>
+Il totale pu&ograve; essere letto in un qualsiasi momento prima che
+termini la sessione tramite il metodo <span style="font-weight: bold;">totale()</span>
+della classe Cassa.<br>
+Alla fine viene chiusa la sessione di cassa tramite il metodo <span
+ style="font-weight: bold;">close()</span> che azzera il totale.<br>
+<code></code>
+<h2>R2: Item venduti<br>
+</h2>
+Ogni volta che viene letto il codice di un prodotto la cassa accede ad
+un listino di prodotti e recupera il prezzo e la descrizione del
+prodotto. <br>
+<code></code>Il metodo <span style="font-weight: bold;">leggi()</span>,
+restituisce informazioni sul pezzo acquistato. Il pezzo acquistato
+&egrave; un esemplare di un prodotti.<br>
+Le informazioni sul pezzo sono accessibile tramite l'interfaccia <span
+ style="font-weight: bold;">Pezzo </span>che definisce i seguenti
+metodi: il metodo <span style="font-weight: bold;">getNome()</span>
+restituisce il nome del prodotto; il metodo <span
+ style="font-weight: bold;">getPrezzo()</span> restituisce il prezzo a
+cui &egrave; stato venduto il pezzo.<br>
+Se il codice letto non corrisponde ad alcun prodotto del listno prezzi,
+allora il metodo leggi() restituisce un Pezzo <span
+ style="font-weight: bold;">null</span>.<br>
+<h2>R3: Calcolo delle tasse<br>
+</h2>
+I prezzi dei prodotti (e quidni il totale) includono le tasse quindi
+deve essere possibile avere il valore senza tasse (imponibile) e
+l'ammontare delle tasse (IVA).<br>
+Il metodo imponibile() restituisce il totale senza tasse. Il metodo
+iva() restituisce l'ammontare delle tasse.<br>
+Le tasse corrispondono al 20% dell'imponibile.<br>
+NB: occorre scorporare l'IVA del 20% dai prezzi. Se ad esempio il
+totale dei prezzi &egrave; 120, l'imponibile sar&agrave; 100
+e l'IVA pari a 20.<br>
+<h2>R4: Promozione</h2>
+In un qualsiasi momento &egrave; possibile decidere che un certo
+prodotto &egrave; in promozione, da quel momento in poi tutti i pezzi
+di quel prodotto saranno venduti<br>
+con lo sconto specificato. Per semplicit&agrave; si assuma che &egrave;
+possibile avere un solo prodotto in promozione per volta.<br>
+Per attivare la promozione si utilizza il metodo <span
+ style="font-weight: bold;">promozione() </span>che riceve come
+parametri il codice del prodotto da promuovere e un intero che indica
+la percentuale di sconto da applicare.<br>
+Per disabilitare la promozione si passa al metodo il codice di un
+prodotto inesistente.<br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+</body>
+</html>

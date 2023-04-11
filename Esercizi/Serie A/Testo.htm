@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <title>Serie A</title>
+</head>
+
+
+<body>
+
+
+<center>
+<h1>Serie A</h1>
+
+
+</center>
+
+
+<b><font size="2"></font></b>
+<p>Realizzare un sistema per gestire il campionato di calcio
+italiano di Serie A. Tutte le classi sono contenute nel package <i><b>campionato</b></i>.</p>
+
+
+<b><font size="4">R1: Squadre</font></b>
+<p style="height: 22px;">Ogni squadra ha un nome, e un insieme di calciatori:
+</p>
+
+<ul>
+
+
+  <li>Il metodo <b>aggiungiSquadra()</b> della
+classe <code>SerieA</code> aggiunge una squadra al
+sistema. </li>
+
+
+  <li>Il metodo <b>getSquadre()</b> deve ritornare
+una stringa contenente i nomi di tutte le squadre inserite, in ordine
+alfabetico, separati da virgola e spazio (ad esempio: "Inter, Roma,
+Milan"). </li>
+
+
+</ul>
+
+
+<b><font size="4">R2: Calciatori</font></b>
+<p>Ogni calciatore &egrave; identificato da nome, cognome,
+nazionalit&agrave; e numero di maglia (che lo distingue
+univocamente dagli altri compagni di squadra).
+</p>
+
+
+<ul>
+
+
+  <li>Il metodo <b>aggiungiCalciatore(..)</b> della
+classe <code>SerieA </code>
+aggiunge un calciatore ad una squadra. Se la squadra non esiste viene
+generata l'eccezione <b>SquadraInesistente</b>.</li>
+
+
+  <li>Il metodo <b>getCalciatore(..)</b> ritorna una
+stringa contenente nome, cognome e nazione di origine del calciatore
+con il seguente formato, ad esempio "Gennaro Gattuso (Italia)". Se non
+c'e` un calciatore corrispondente a quel numero viene ritornata una
+stringa vuota ( "" ).</li>
+
+
+  <li>I metodi <b>setCosto()</b> /&nbsp; <b>getCosto()</b>
+permettono di inserire /leggere il valore (in euro) di un calciatore
+dato il numero di maglia e la squadra.</li>
+
+
+</ul>
+
+
+<b><font size="4">R3: Costo calciatori</font></b>
+<br>
+
+Il sistema deve permettere di calcolare alcune statistiche.<br>
+
+<ul>
+
+  <li>&nbsp;Il metodo <b>valoreSquadra(..)</b> ritorna il
+valore totale in euro di tutti i calciatori della squadra.</li>
+
+  <li>Il metodo <b>valoreMassimo()</b> ritorna il
+nome della squadra in cui il valore complessivo dei giocatori e`
+superiore a quello di tutte le altre squadre.</li>
+
+
+  <li>Il metodo <b>valoreTotale() </b>ritorna il
+valore in euro di tutti i giocatori del campionato di Serie A.</li>
+
+  <small>
+  </small>
+</ul>
+
+
+<b><font size="4">R4: Lista calciatori</font></b>
+<ul>
+
+
+
+  <li>Il metodo <b>listaCalciatori()</b> ritorna una
+stringa contenente una lista dei calciatori di una squadra, ordinati
+per numero di maglia crescente: i calciatori sono separati da carattere
+"\n", e per ogni calciatore vengono visualizzate tutte le informazioni,
+ad esempio, nel seguente formato: &nbsp; "7. Paolo Maldini
+(Italia)\n".&nbsp;Se non ci sono calciatori deve essere ritornata una stringa
+vuota "".</li>
+
+
+</ul>
+
+
+<b><font size="4">R5: Salva Lista calciatori</font></b>
+<ul>
+
+
+  <li>Il metodo&nbsp;<b>salvaCalciatori()</b>
+salva sul filedi testo (il cui nome &egrave; passato come
+parametro) tutti i calciatori in ordine alfabetico.</li>
+
+
+  <li>Ogni linea del file contiene le informazioni di un
+calciatore nello stesso formato precedente, es: &nbsp; "7. Paolo
+Maldini (Italia)\n".&nbsp;</li>
+
+
+  <li>Se non ci sono calciatori non deve essere creato nessun
+file.</li>
+
+
+</ul>
+
+
+<hr>
+</body>
+</html>

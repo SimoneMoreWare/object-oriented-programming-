@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+
+
+
+  
+  
+  <title>Geografia</title>
+</head>
+
+
+<body>
+
+
+
+
+<center>
+<h1>Geografia</h1>
+
+
+</center>
+
+
+
+
+<b><font size="2"></font></b>
+<p>Realizzare un sistema che memorizzi una mappa geografica mondiale. Tutte le classi sono nel package <span style="font-style: italic; font-weight: bold;">mondo .</span></p>
+
+
+<h2>R1: Stati</h2>
+
+
+Ogni stato &egrave; identificato da diversi attributi, tra cui la
+citt&agrave; capitale, gli stati confinanti, le lingue parlate, la
+popolazione, la dimensione in km-quadri:.<br>
+
+<ul>
+
+  <li>Il metodo <b>aggiungiStato(String stato, String capitale,&nbsp;long popolazione, double dimensione )</b> della classe <code>Mondo</code> aggiunge 
+uno stato al sistema. </li>
+
+  <li>Il metodo <b>getCapitale(String stato)</b> ritorna una stringa con il nome della capitale.</li>
+  <li>Il metodo <span style="font-weight: bold;">getPopolazione(String stato)</span> e <span style="font-weight: bold;">getDimensione(String stato)</span> ritornano rispettivamente un long e un double. </li>
+
+
+  <li>Il metodo <span style="font-weight: bold;">setConfine(String stato1, String stato2)</span> stabilisce che 2 stati confinano.</li>
+
+
+
+</ul>
+<h2>R2: Lettura da File</h2>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Il metodo <span style="font-weight: bold;">caricaDati</span>(String fileStati, String fileConfini) carica in memoria la struttura dati da due file.&nbsp;
+<ul>
+  <li>Il file <span style="font-weight: bold;">stati.txt </span>contiene
+le informazioni su ogni singolo stato in una linea nel seguente formato
+"Stato ; capitale dimensione popolazione", ad esempio:</li>
+</ul>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Italy
+:&nbsp;&nbsp;&nbsp; Rome &nbsp;&nbsp;&nbsp; 116,305 &nbsp;&nbsp;&nbsp;
+58,133,509<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Jamaica
+:&nbsp;&nbsp;&nbsp; Kingston &nbsp;&nbsp;&nbsp; 4,244
+&nbsp;&nbsp;&nbsp; 2,758,124<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Japan
+:&nbsp;&nbsp;&nbsp; Tokyo &nbsp;&nbsp;&nbsp; 145,882 &nbsp;&nbsp;&nbsp;
+127,463,611<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; La dimensione &egrave; in kmq, la
+popolazione in unit&agrave; (dati ufficiali del 2007)&nbsp; &nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Il file usa notazione
+anglosassone, quindi le cifre decimali sono separate dal carattere '.'
+mentre la virgola ',' &egrave; usata come separatore di migliaia.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Possono esserci un numero arbitrario di spazi tra i dati su una stessa linea.<br>
+<ul>
+  <li>Il file <span style="font-weight: bold;">confini.txt </span>contiene le informazioni sui confini; ogni linea contiene una coppaid istati confinanti separati da ":", ad esempio:</li>
+</ul>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Spain : Portugal<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Spain : France<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Italy :Switzerland<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Italy : France<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Slovenia:&nbsp; Italy<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ......&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>
+<h2>R3: Confini</h2>
+
+
+<ul>
+
+
+  <li>Il metodo <span style="font-weight: bold;">confinano(String stato1, String stato 2) </span>ritorna true se i 2 stati confinano false altrimenti.</li>
+
+
+  <li>Il metodo&nbsp;<b>numeroConfinanti(String stato)</b> dato il nome dello stato ritorna un int contenente il numero di stati confinanti.</li>
+
+
+  <li>Il metodo <b>getConfinanti(String stato)</b> dato il nome
+dello stato ritorna una ritorna l'elenco degli stati confinanti
+separati da virgola; ad esempio, supponendo di aver caricato la mappa
+europea completa,&nbsp; <span style="font-style: italic;">getConfinanti("Italy")&nbsp;</span>ritorna "France, Switzerland, Austria, Slovenia, Vatican, San Marino": l'ordine non conta.</li>
+
+
+</ul>
+
+
+
+
+<b><font size="5">R4:&nbsp;Statistiche</font></b>
+<br>
+
+
+<br>
+
+
+Il sistema deve permettere di calcolare alcune statistiche. <br>
+<ul>
+
+
+  <li>Il metodo <b>ordinaPerPopolazione()</b> ritorna una stringa
+contenente la lista degli stati in ordine decrescente di popolazione.
+Ogni linea della lista contiene il numero di posizione, il nome, il
+numero di abitanti,&nbsp;nel seguente formato "1. China&nbsp;&nbsp;1321851888" .</li>
+  <li>Il metodo <b>ordinaPerDimensione()</b> ritorna una stringa
+contenente la lista degli stati in ordine decrescente di dimensione.
+Ogni linea della lista contiene il numero di posizione, il nome, la
+dimensione in kmq,&nbsp;nel seguente formato "1. Russia&nbsp; 6592735" .</li>
+
+
+  
+
+  <li>Se la lista &egrave; vuota ritorna la stringa vuota "".</li>
+
+
+
+</ul>
+
+
+
+
+<hr><br>
+
+
+</body>
+</html>
