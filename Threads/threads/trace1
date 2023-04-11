@@ -1,0 +1,46 @@
+c1 put [early, her, spent]
+p1 put [The, early, part, of, her, life, spent, early, of, her, spent]
+c2 put [The, part, of, life, early]
+
+
+10 3 1 4 s
+
+input duration in s, size, producer rate, consumer rate, buffer (S,Q): 10 3 1 4 q
+c1 waiting before getting 
+p1 put The
+c1 got The
+c2 waiting before getting 
+p1 put early
+c2 got early
+p1 put part
+p1 put of
+c1 got part
+p1 put her
+c2 got of
+c2 got her
+p1 put life
+p1 put was
+p1 put spent
+c1 got life
+p1 put in
+p1 waiting before putting Paris
+c2 got was
+p1 put Paris
+c2 got spent
+p1 put The
+p1 waiting before putting early
+c1 got in
+p1 put early
+p1 waiting before putting part
+c1 got Paris
+p1 put part
+c1 got The
+c2 got early
+p1 put of
+c2 got part
+p1 put her
+p1 put life
+p1 waiting before putting was
+c1 put [The, part, life, in, Paris, The]
+c2 put [early, of, her, was, spent, early, part]
+p1 put [The, early, part, of, her, life, was, spent, in, Paris, The, early, part, of, her, life]
