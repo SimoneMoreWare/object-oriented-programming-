@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Programmazione ad Oggetti</title>
+</head>
+<body>
+<h1 style="text-align: center;">Pubblicazioni</h1>
+Sviluppare l'applicazione che consente di valutare l'attivit&agrave; di ricercatori tramite le loro pubblicazioni.<br>
+Tutte le classi devono essere nel package "<b>ricerca</b>".<br>
+<hr style="width: 100%; height: 2px;">
+
+
+<h2>R1 - Ricercatori</h2>
+L'interazione con il sistema avviene tramite la classe <span style="font-weight: bold;">Valutazione</span>.
+<br>
+&Egrave; possibile inserire i dati di un nuovo ricercatore tramite il metodo <b>addRicercatore()</b> che riceve
+come parametri un codice univoco, nome e cognome, il metodo restituisce 
+un oggetto di tipo <b>Ricercatore</b>.<br>
+La classe Ricercatore permette di conoscere codice, nome e cognome tramite i metodi <b>getCodice()</b>,
+<b>getFirst()</b> e <b>getLast()</b>. 
+Per ottenere uno specifico ricercatore si usa il metodo <b>getRicercatore()</b>.
+<br>
+
+<h2>R2 - Riviste</h2>
+Per inserire delle riviste nel sistema si utilizza il metodo <b>addRivista()</b> che riceve come parametri il
+codice ISSN, il nome della rivista e l'Impact Factor, che &egrave; un indice che rappresenta la bont&agrave; della rivista.
+Il metodo restituisce un oggetto di classe <b>Rivista</b>, la quale offre i metodi <b>getTitolo()</b> e <b>getIF()</b>
+per accedere al titolo e all'Impact Factor della rivista.
+<br>
+Per poter ottenere una rivista specifica si utilizza il metodo <b>getRivista()</b> che riceve come parametro il codice ISSN.
+Mentre il metodo <b>getRiviste()</b> restituisce la lista delle riviste in ordine di Impact Factor decrescente.
+<br>
+
+<h2>R3 - Articoli</h2>
+Gli articoli pubblicati sulle riviste vengono inseriti tramite il metodo <b>addArticolo()</b> della classe Rivista che riceve 
+come parametri il titolo dell'articolo e l'autore, il metodo restituisce un oggetto di classe <b>Articolo</b>. 
+Il titolo &egrave; accessibile tramite il metodo <b>getTitolo()</b>.<br>
+Per inserire articoli con pi&ugrave; autori si utilizza la versione dello stesso metodo che riceva come ultimo
+parametro un array di autori. Per ottenere l'elenco degli autori si utilizza il metodo <b>elencoAutori()</b>.
+<br>
+&Egrave; possibile sapere il numero degli articoli pubblicati da un dato ricercatore tramite il metodo
+<b>numArticoli()</b> della classe Ricercatore.
+<br>
+
+<h2>R4 - Indici e citazioni</h2>
+Si devono poter calcolare due diversi indici di produttivit&agrave; dei ricercatori.
+<br>
+Il metodo <b>sommaIF()</b> della classe Ricercatore calcola la somma degli Impact Factor delle riviste per ogni articolo
+pubblicato dal ricercatore.
+<br>
+Il metodo <b>cita()</b> della classe Articolo riceve come parametro un articolo e permette di definire una citazione ad esso.
+Ad esempio <code>a1.cita(a2);</code> inserisce una nuova citazione dell'articolo a2 da parte dell'articolo a1.
+Il numero di citazioni di un articolo &egrave; ottenibile tramite il metodo <b>numCitazioni()</b>.
+<br>
+Il metodo <b>hIndex()</b> della classe Ricercatore calcola l'h-index dell'autore nel modo seguente:
+<ul>
+<li>si ordinano gli articoli dell'autore in ordine decrescente per numero di citazioni
+<li>h-index = max( i | citazioni(articoli[i]) >= i )
+<li>se un ricercatore non ha articoli, oppure se i suoi articoli hanno n. di citazioni = 0, allora il suo hIndex vale 0.
+</ul>
+Quindi se un autore ha h-Index <i>n</i> vuol dire che <i>n</i> articoli di cui &egrave; autore
+hanno ricevuto almeno <i>n</i> citazioni.
+<br>
+Ad esempio dati i seguenti articoli, l'h-index = 4:
+<table border=1>
+<tr><th>Pos.<th>Articolo<th>Num citazioni
+<tr><td>1<td>Art y<td>50
+<tr><td>2<td>Art z<td>40
+<tr><td>3<td>Art s<td>10
+<tr><td>4<td>Art x<td>5
+<tr><td>5<td>Art t<td>4
+</table>
+<h2>R5 - Lettura da file</h2>
+&Egrave; possibile leggere i dati relativi alla ricerca da un file di testo organizzato come segue
+tramite il metodo <b>leggi()</b>.
+Gli elementi sono memorizzati per righe ed il loro tipo &egrave; definito dalla prima lettera della linea.
+I dati degli elementi sono separati da ';'.
+<br>
+I ricercatori sono identificati dalla 'R', seguita dal codice, nome e cognome.<br>
+Le riviste sono identificate dalla 'J', seguita dall'ISSN, il nome, e dall'Impact Factor.<br>
+Gli articoli sono identificati dalla 'A', seguita dal titolo, dal codice dell'autore (non si considerano i casi di autori multipli) 
+e dal numero di citazioni.
+<br>
+In caso di errore su una linea il metodo deve ignorare la linea e proseguire la lettura del file.
+<br>
+Esempio:
+<pre>R;123;Albert;Einstein
+J;0031-9007;Physical Review Letters;7.072
+A;0031-9007;Teoria della relativita ristretta;123;1246
+</pre>
+Si intende che prima siano elencati i ricercatori, poi le riviste e gli articoli.
+
+</body>
+</html>
