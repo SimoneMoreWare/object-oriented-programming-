@@ -21,15 +21,15 @@ Corso di object oriented programming | Politecnico di Torino
 # Laboratori
 * laboratorio 1 (university)
   * Topic
-   * Java basic syntax
+    * Java basic syntax
   * https://www.youtube.com/watch?v=WSpDE4sFXO4&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=39
   * https://www.youtube.com/watch?v=7RlX7OSEXpg&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=36
   * https://github.com/SimoneMoreWare/object-oriented-programming-/tree/main/Lab1%20University
 * laboratorio 2 (hydraluic)
   * Topic
-   * inheritance
-   * interfaces 
-   * notifiers
+    * inheritance
+    * interfaces 
+    * notifiers
   * https://www.youtube.com/watch?v=XxxlVEKZazY&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=30
   * https://www.youtube.com/watch?v=8yItpmu-_cs&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=26
 * laboratorio 3 (diet)
