@@ -20,12 +20,31 @@ Corso di object oriented programming | Politecnico di Torino
 * Disegnare diagrammi UML free https://app.diagrams.net/
 # Laboratori
 * laboratorio 1 (university)
+  * Topic
+   * Java basic syntax
   * https://www.youtube.com/watch?v=WSpDE4sFXO4&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=39
   * https://www.youtube.com/watch?v=7RlX7OSEXpg&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=36
   * https://github.com/SimoneMoreWare/object-oriented-programming-/tree/main/Lab1%20University
 * laboratorio 2 (hydraluic)
+  * Topic
+   * inheritance
+   * interfaces 
+   * notifiers
   * https://www.youtube.com/watch?v=XxxlVEKZazY&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=30
   * https://www.youtube.com/watch?v=8yItpmu-_cs&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=26
+* laboratorio 3 (diet)
+ * Topic 
+  * in-depth interfaces
+  * enum 
+  * collections
+* laboratorio 4 (MountainHut)
+ * Topic
+  * stream
+  * map
+* laboratorio 5 (Clinic)
+ * Topic
+  * exception
+  * summary of previous topics
 # Altre repository
 * https://github.com/LilloBarilotto/oop
 * https://github.com/Borzoneg/Programmazione-a-oggetti-a.a-2019-2020
