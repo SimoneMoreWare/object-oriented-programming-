@@ -33,18 +33,18 @@ Corso di object oriented programming | Politecnico di Torino
   * https://www.youtube.com/watch?v=XxxlVEKZazY&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=30
   * https://www.youtube.com/watch?v=8yItpmu-_cs&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=26
 * laboratorio 3 (diet)
- * Topic 
-  * in-depth interfaces
-  * enum 
-  * collections
+  * Topic 
+    * in-depth interfaces
+    * enum 
+    * collections
 * laboratorio 4 (MountainHut)
- * Topic
-  * stream
-  * map
+   * Topic
+     * stream
+     * map
 * laboratorio 5 (Clinic)
- * Topic
-  * exception
-  * summary of previous topics
+  * Topic
+    * exception
+    * summary of previous topics
 # Altre repository
 * https://github.com/LilloBarilotto/oop
 * https://github.com/Borzoneg/Programmazione-a-oggetti-a.a-2019-2020
