@@ -42,6 +42,7 @@ Corso di object oriented programming | Politecnico di Torino
     * collections
   * https://www.youtube.com/watch?v=iBhFXzR0w20&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=22
   * https://www.youtube.com/watch?v=OceYGqx-VPQ&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=19
+  * https://github.com/SimoneMoreWare/object-oriented-programming-/tree/main/Laboratori/lab3%20diet/test-lab3-diet-solution-main/test-lab3-diet-solution-main
 * laboratorio 4 (MountainHut)
    * Topic
      * stream
