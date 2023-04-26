@@ -40,6 +40,8 @@ Corso di object oriented programming | Politecnico di Torino
     * in-depth interfaces
     * enum 
     * collections
+  * https://www.youtube.com/watch?v=iBhFXzR0w20&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=22
+  * https://www.youtube.com/watch?v=OceYGqx-VPQ&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=19
 * laboratorio 4 (MountainHut)
    * Topic
      * stream
