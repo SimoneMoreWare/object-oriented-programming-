@@ -3,6 +3,7 @@ Corso di object oriented programming | Politecnico di Torino
 
 # Manuale
 * https://github.com/SimoneMoreWare/object-oriented-programming-/blob/main/DeSio.pdf
+* https://github.com/TheAlgorithms/Java
 # Documentazione
 * https://oop.polito.it/api/
 # Lezioni
