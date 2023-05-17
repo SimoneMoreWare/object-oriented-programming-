@@ -48,6 +48,8 @@ Corso di object oriented programming | Politecnico di Torino
    * Topic
      * stream
      * map
+   * https://github.com/SimoneMoreWare/object-oriented-programming-/tree/main/Laboratori/lab4-huts/lab4-huts-solution-main
+   * https://www.youtube.com/watch?v=NghGdCj9hoY&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=11
 * laboratorio 5 (Clinic)
   * Topic
     * exception
