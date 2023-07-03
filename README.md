@@ -61,5 +61,6 @@ Corso di object oriented programming | Politecnico di Torino
 * https://github.com/LilloBarilotto/oop
 * https://github.com/Borzoneg/Programmazione-a-oggetti-a.a-2019-2020
 * https://github.com/salvatoremallemaci/programmazione-a-oggetti
+* https://github.com/RisingZero/oop-2023
 # Extra: design pattern
 * https://github.com/iluwatar/java-design-patterns
