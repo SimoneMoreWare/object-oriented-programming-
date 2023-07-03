@@ -8,6 +8,9 @@ Corso di object oriented programming | Politecnico di Torino
 * https://oop.polito.it/api/
 # Lezioni
 * https://www.youtube.com/watch?v=4eSxVGx1Bcc&list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr&index=51
+# Esami
+* http://softeng.polito.it/courses/09CBI/esami/
+* https://oop.polito.it/svn/OOPExam/past/
 # Link
 * lezioni https://www.youtube.com/playlist?list=PL4rhnAQoouqZi5tYpjekry6KNXRWGDFrr
 * documentazione operativa https://oop.polito.it/doc/
