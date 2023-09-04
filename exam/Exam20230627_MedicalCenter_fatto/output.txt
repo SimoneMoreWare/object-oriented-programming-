@@ -1,0 +1,149 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< it.polito.oop.exam:med >-----------------------
+[INFO] Building med 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ med ---
+[INFO] Deleting /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ med ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ med ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[19,21] cannot find symbol
+  symbol:   class Doctor
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[20,13] cannot find symbol
+  symbol:   class Schedule
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[21,21] cannot find symbol
+  symbol:   class Patient
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[22,21] cannot find symbol
+  symbol:   class Appointment
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[25,21] cannot find symbol
+  symbol:   class Patient
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[63,37] cannot find symbol
+  symbol:   class Doctor
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[75,38] cannot find symbol
+  symbol:   variable Doctor
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[112,17] cannot find symbol
+  symbol:   class Doctor
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[113,17] cannot find symbol
+  symbol:   class Schedule
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[113,34] cannot find symbol
+  symbol:   class Schedule
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[161,17] cannot find symbol
+  symbol:   class Doctor
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[162,17] cannot find symbol
+  symbol:   class Patient
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[162,33] cannot find symbol
+  symbol:   class Patient
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[164,17] cannot find symbol
+  symbol:   class Schedule
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[166,17] cannot find symbol
+  symbol:   class Appointment
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[166,37] cannot find symbol
+  symbol:   class Appointment
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[235,41] incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    lower bounds: java.lang.Object
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[272,17] cannot find symbol
+  symbol:   class Patient
+  location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[275,62] cannot find symbol
+  symbol:   variable Appointment
+  location: class it.polito.med.MedManager
+[INFO] 19 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.593 s
+[INFO] Finished at: 2023-06-29T12:02:07+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project med: Compilation failure: Compilation failure: 
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[19,21] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[20,13] cannot find symbol
+[ERROR]   symbol:   class Schedule
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[21,21] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[22,21] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[25,21] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[63,37] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[75,38] cannot find symbol
+[ERROR]   symbol:   variable Doctor
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[112,17] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[113,17] cannot find symbol
+[ERROR]   symbol:   class Schedule
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[113,34] cannot find symbol
+[ERROR]   symbol:   class Schedule
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[161,17] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[162,17] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[162,33] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[164,17] cannot find symbol
+[ERROR]   symbol:   class Schedule
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[166,17] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[166,37] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[235,41] incompatible types: inference variable T has incompatible bounds
+[ERROR]     equality constraints: java.lang.String
+[ERROR]     lower bounds: java.lang.Object
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[272,17] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s319297/src/it/polito/med/MedManager.java:[275,62] cannot find symbol
+[ERROR]   symbol:   variable Appointment
+[ERROR]   location: class it.polito.med.MedManager
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
