@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<body>
+<h1 style="text-align: center;">Motore di ricerca<br>
+</h1>
+Sviluppare un’applicazione Java che implementi le funzionalità di un motore di ricerca in grado di soddisfare le interrogazioni degli utenti restituendo un elenco ordinato di pagine web rispondenti a determinati criteri. Tutte le classi devono essere contenute nel package "motorediricerca".<br>
+
+<hr style="width: 100%; height: 2px;">
+
+<h2>R1 - Pagine</h2>
+La classe principale con cui interagire è MotoreDiRicerca. <BR>
+Mediante il metodo <B>aggiungiPagina()</B> è possibile aggiungere una nuova pagina all’insieme di quelle indicizzate dal motore di ricerca. 
+Ogni pagina è identificata univocamente dall’indirizzo assoluto (es. http://www.polito.it/index.html). Il metodo aggiungiPagina() riceve, 
+oltre all’indirizzo della pagina da aggiungere, il contenuto HTML della stessa e restituisce un oggetto della classe Pagina. 
+Nel caso in cui la pagina sia già presente, il metodo ne aggiorna le relative informazioni.<BR> Ogni volta che il metodo viene invocato, viene registrata 
+la data di inserimento/modifica della pagina stessa ottenuto con una chiamata a System.currentTimeMillis(). <BR>
+Il metodo <B>elencoPagine()</B> della classe MotoreDiRicerca restituisce l’elenco ordinato delle pagine, riportando in cima all’elenco 
+le pagine aggiunte/aggiornate più recentemente.
+ 
+<h2>R2 - Contenuti multimediali</h2>
+Ogni pagina contiene un certo numero di elementi multimediali, ovvero immagini e video, rappresentati dalla classe ElementoMultimediale e dalle rispettive classi derivate Immagine e Video. 
+Ogni elemento multimediale è caratterizzato da un nome e da una dimensione. I video sono inoltre caratterizzati da una durata, espressa mediante un numero intero di secondi. Le classi mettono a disposizione i metodi getter e setter per accedere a tutte le suddette informazioni. <BR>
+Il metodo <B>tipo()</B> richiamato su di un contenuto multimediale di tipo immagine restituisce la stringa "immagine". Richiamato su di un contenuto multimediale di tipo video restituisce la stringa "video".<BR> 
+I metodi <B>aggiungiImmagine()</B> ed <B>aggiungiVideo()</B> della classe Pagina consentono rispettivamente di aggiungere una nuova immagine ed un nuovo video alla pagina. Nella fase di inserimento, eventuali elementi con lo stesso nome vengono scartati. <BR>
+Il metodo <B>elencoElementiMultimediali()</B> della classe Pagina restituisce un elenco degli elementi multimediali contenuti nella pagina per dimensione crescente ed in ordine alfabetico. 
+
+<h2>R3 - Collegamenti e parole chiave</h2>
+Il metodo <B>aggiungiCollegamentoUscente()</B> della classe MotoreDiRicerca permette di registrare la presenza di un collegamento ipertestuale tra la pagina il cui indirizzo è passato come primo parametro e la pagina il cui indirizzo è passato come secondo parametro. Le due pagine devono già appartenere all’insieme gestito dal motore di ricerca. Tra due pagine possono esservi più collegamenti. <BR>
+Mediante il metodo <B>aggiungiParolaChiave()</B> della classe Pagina è possibile specificare una nuova parola chiave con cui descrivere la pagina. Nel caso in cui la parola passata come parametro sia già presente tra quelle utilizzate per la pagina viene scatenata un’eccezione di tipo ParolaChiaveDuplicataException. <BR>
+Il metodo <B>elencoParoleChiave()</B> della classe Pagina restituisce un array contenente le parole chiave definite per la pagina elencate nell’ordine di inserimento.
+
+<h2>R4 - Ricerca</h2>
+Mediante il metodo <B>cerca()</B> della classe MotoreDiRicerca è possibile effettuare una ricerca sull’insieme delle pagine. Il metodo riceve la stringa di ricerca composta da una serie di parole separate da spazi e restituisce un elenco ordinato di pagine che risponde alla ricerca effettuata. <BR>
+L’ordinamento è definito in base ad un punteggio determinato per ciascuna pagina dall’algoritmo di ricerca implementato, in grado di sfruttare le parole chiave specificate, oltre al numero di collegamenti uscenti ed entranti per ogni pagina. <BR>
+In particolare, l’algoritmo incrementa di un’unità il punteggio di una pagina per ogni parola chiave nella stringa di ricerca presente tra quelle aggiunte alla pagina. L’algoritmo incrementa inoltre di un’unità il punteggio per ogni collegamento uscente da una qualsivoglia pagina e diretto verso la pagina corrente. 
+<BR>Le pagine con il punteggio più alto sono riportate per prime nell’elenco.<BR>
+Il metodo <B>getPunteggio()</B> della classe Pagina permette di ottenere il punteggio determinato per la pagina.
+
+
+
+<hr style="width: 100%; height: 2px;"><br>
+</body>
+</html>
