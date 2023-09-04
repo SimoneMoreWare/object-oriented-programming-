@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+
+
+<title>Gestione di esami</title>
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+
+<h1>Gestione di esami</h1>
+<p>
+
+Si scriva un programma per la gestione di esami. Le classi si trovano nel package <b>exams</b>; 
+la classe principale è <b>ExamHandling</b>. La classe <b>Example</b> nel package <b>main</b> presenta esempi di uso dei metodi principali 
+ed esempi dei controlli richiesti.
+Le eccezioni sono di tipo <b>ExamException</b>.<br>
+
+<p>
+La <a href="/Redirect/86A2CA8C/softeng.polito.it/courses/docs/api/index.html" target="api" target="_blank">JDK documentation</a>  
+si trova sul server locale.
+</p>
+
+<h2>R1: Piani di studio e studenti</h2>
+
+
+Il metodo <b>addStudyPlan</b> (String name, String... courses) aggiunge un piano di studio; il primo parametro è il nome del piano di studio e i parametri successivi sono i nomi dei corsi che lo compongono. 
+Un corso può far parte di più piani di studio. Lancia un'eccezione se il nome del piano è duplicato.<br>
+
+Il metodo <b>enrollStudent</b> (String studentId, String studentName, String studyPlan) registra uno studente con identificativo e nome, 
+e associa allo studente un piano di studi. Lancia un'eccezione se l'identificativo è duplicato o se il piano non è definito.<br>
+
+Il metodo <b>numberOfStudentsForStudyPlan</b> dà il n. di studenti per ogni piano di studio; 
+i piani sono ordinati alfabeticamente per nome.<br>
+
+Il metodo <b>studentsForStudyPlan</b> dà la lista ordinata degli id degli studenti 
+per ogni piano di studio; i piani sono ordinati alfabeticamente per nome.<br>
+
+<h2>R2: Esami</h2>
+
+Il metodo <b>openExam</b> (String courseName) apre una sessione d’esame per il corso indicato. 
+Lancia un'eccezione se il corso non è definito o se c’è già una sessione aperta.<br>
+
+Uno studente dà un esame con il metodo <b>takeExam</b> (String studentId, String course). 
+Il metodo lancia un'eccezione se il corso non è definito o non è nel piano di studi dello studente, 
+la sessione d’esame non è aperta, lo studente ha già eseguito takeExam nella sessione 
+oppure ha già un voto sufficiente (>= 18) per il corso.<br>
+
+Il metodo <b>studentsWhoTookTheExam</b> (String courseName) dà l’elenco ordinato degli id degli studenti 
+che hanno eseguito takeExam nella sessione corrente. Lancia un'eccezione se il corso non è definito.<br>
+
+Il metodo int <b>numberOfOpenExamSessions</b> dà il n. delle sessioni d’esame aperte nel momento della chiamata del metodo.<br>
+
+
+
+<h2>R3: Valutazioni</h2>
+Il metodo <b>giveGrade</b> (String courseName, String studentId, int grade) permette di dare un voto allo studente. 
+Il metodo lancia un'eccezione se lo studente non ha dato l’esame (cioè non ha eseguito takeExam), ha già un voto sufficiente (>= 18)
+per l'esame, il voto non è compreso tra 12 e 30 (estremi inclusi). L'esame è superato se il voto è sufficiente, altrimenti è fallito.
+Un voto <18 è detto failing grade.<br>
+
+Il metodo <b>closeExam</b> (String courseName) chiude la sessione d'esame. 
+Lancia un’eccezione se la sessione non è aperta per il corso o se non tutti gli studenti che hanno dato l’esame hanno ricevuto un voto. 
+Dopo la chiusura di una sessione d'esame, la chiamata del metodo studentsWhoTookTheExam dà una lista vuota 
+(cioè la lista degli studenti che hanno dato l’esame nella sessione ormai chiusa è vuota).<br>
+
+
+<h2>R4: Statistiche</h2>
+
+Il metodo <b>gradesOfStudent</b> (String studentId) per lo studente indicato raggruppa per voto
+i nomi dei corsi relativi agli esami; i voti sono ordinati in senso decrescente e i nomi dei corsi alfabeticamente.<br>
+
+Il metodo <b>gradesOfCourse</b> (String courseName) per il corso indicato raggruppa per voto
+gli id degli studenti che hanno superato l'esame; i voti sono ordinati in senso decrescente e gli id alfabeticamente.<br>
+
+Il metodo int <b>failingGradesOfStudent</b> (String studentId) dà il n. degli esami falliti (cioè il n. dei failing grades) per lo studente indicato.<br>
+
+Il metodo int <b>failingGradesOfCourse</b> (String courseName) dà il n. degli esami falliti (cioè il n. dei failing grades) per il corso indicato.<br>
+
+I 4 metodi lanciano un'eccezione se l'id dello studente o il corso sono indefiniti.
+
+
+
+
+
+</body>
+</html>

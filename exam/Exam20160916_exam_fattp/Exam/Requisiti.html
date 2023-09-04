@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+
+<style>
+<!--
+body {
+	margin: 0.5cm;
+	/*
+	font-size: 13px;
+	*/
+	}
+p   {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+    }
+b   {
+	font-family: "Courier New";
+	color: MidnightBlue;
+	background: #f8f8f8;
+	border-radius: 2pt;
+	padding: 1pt;
+/*
+    font-size=85%;
+	border: 1pt dotted silver;
+*/
+	}
+	
+i   {
+	color: Navy;
+	font-family: "Courier New";
+	}
+	
+h1  {
+	font-family: sans-serif;
+	text-align: center;
+    line-height: 1.1em;
+	}
+	
+h2  {
+	color: RoyalBlue;
+	font-family: sans-serif;
+	border-top: 1px dotted gray;
+	}
+.hint {
+    color:LightSlateGray;
+    margin-left:10ch;
+    margin-right:10ch;
+    text-indent:-5ch;
+    }
+.hint b {
+	font-family: inherit;
+	color: MidnightBlue;
+	background: inherit;
+	border-radius: inherit;
+	padding: inherit;
+    }
+.hint i {
+	color: gray;
+    }
+
+@media print {
+body {
+	font-size: 10pt;
+	}
+
+  h2 {
+  	float:left;
+    margin-top: 0;
+    padding: 5px 15px 5px 0px;
+    line-height: 0.8em;
+  	}
+}
+table {
+	float: right;
+	margin: 20px;
+	border-collapse:collapse;
+	border-bottom: 1px solid Navy;
+	border-top: 1px solid Navy;
+	}
+td, th  {
+	padding: 1px 5px 1px 5px;
+	}
+tr:nth-child(even) {
+    background-color: PowderBlue;
+    margin: 1pt solid PowderBlue;
+}
+-->
+</style>
+
+<title>Gestione di esami</title>
+</head>
+
+<body>
+
+<h1>Gestione di esami</h1>
+<p>
+
+Si scriva un programma per la gestione di esami. Le classi si trovano nel package <b>exams</b>; 
+la classe principale è <b>ExamHandling</b>. La classe <b>Example</b> nel package <b>main</b> presenta esempi di uso dei metodi principali 
+ed esempi dei controlli richiesti.
+Le eccezioni sono di tipo <b>ExamException</b>.<br>
+
+<p>
+La <a href="http://softeng.polito.it/courses/docs/api/index.html" target="api" target="_blank">JDK documentation</a>  
+si trova sul server locale.
+</p>
+
+<h2>R1: Piani di studio e studenti</h2>
+
+
+Il metodo <b>addStudyPlan(String name, String... courses)</b>  aggiunge un piano di studio; il primo parametro è il nome del piano di studio e i parametri successivi sono i nomi dei corsi che lo compongono. 
+Un corso può far parte di più piani di studio. Il metodo lancia un'eccezione se il nome del piano è duplicato.<br>
+
+Il metodo <b>enrollStudent(String studentId, String studentName, String studyPlan)</b> registra uno studente con identificativo e nome, 
+e associa allo studente un piano di studi. Il metodo lancia un'eccezione se l'identificativo è duplicato o se il piano non è definito.<br>
+
+Il metodo <b>numberOfStudentsForStudyPlan()</b> dà il n. di studenti per ogni piano di studio; 
+i piani sono ordinati alfabeticamente per nome.<br>
+
+Il metodo <b>studentsForStudyPlan()</b> dà la lista ordinata degli id degli studenti 
+per ogni piano di studio; i piani sono ordinati alfabeticamente per nome.<br>
+
+<h2>R2: Esami</h2>
+
+Il metodo <b>openExam(String courseName)</b>  apre una sessione d’'esame per il corso indicato. 
+Lancia un'eccezione se il corso non è definito o se c’è già una sessione aperta.<br>
+
+Uno studente dà un esame con il metodo <b>takeExam(String studentId, String course)</b>. 
+Il metodo lancia un'eccezione se il corso non è definito o non è nel piano di studi dello studente, 
+la sessione d’esame non è aperta, lo studente ha già eseguito <i>takeExam()</i> nella sessione 
+oppure ha già un voto sufficiente (>= 18) per il corso.<br>
+
+Il metodo <b>studentsWhoTookTheExam(String courseName)</b>  dà l’elenco ordinato degli id degli studenti 
+che hanno eseguito <i>takeExam</i> nella sessione corrente. Lancia un'eccezione se il corso non è definito.<br>
+
+Il metodo <b>numberOfOpenExamSessions()</b> dà il n. delle sessioni d’esame aperte nel momento della chiamata del metodo.<br>
+
+
+
+<h2>R3: Valutazioni</h2>
+Il metodo <b>giveGrade(String courseName, String studentId, int grade)</b>  permette di dare un voto allo studente. 
+Il metodo lancia un'eccezione se lo studente non ha dato l’esame (cioè non ha eseguito <i>takeExam()</i>), ha già un voto sufficiente (>= 18)
+per l'esame, il voto non è compreso tra 12 e 30 (estremi inclusi). L'esame è superato se il voto è sufficiente, altrimenti è fallito.
+Un voto <18 è detto failing grade.<br>
+
+Il metodo <b>closeExam(String courseName)</b>  chiude la sessione d'esame. 
+Lancia un’eccezione se la sessione non è aperta per il corso o se non tutti gli studenti che hanno dato l’esame hanno ricevuto un voto. 
+Dopo la chiusura di una sessione d'esame, la chiamata del metodo <i>studentsWhoTookTheExam</i> dà una lista vuota  
+(cioè la lista degli studenti che hanno dato l’esame nella sessione ormai chiusa è vuota).<br>
+
+
+<h2>R4: Statistiche</h2>
+
+Il metodo <b>gradesOfStudent(String studentId)</b>  per lo studente indicato raggruppa per voto
+(considerando solo i voti sufficienti)
+i nomi dei corsi relativi agli esami; i voti sono ordinati in senso decrescente e i nomi dei corsi alfabeticamente.<br>
+
+Il metodo <b>gradesOfCourse(String courseName)</b>  per il corso indicato raggruppa per voto
+gli id degli studenti che hanno superato l'esame; i voti sono ordinati in senso decrescente e gli id alfabeticamente.<br>
+
+Il metodo  <b>failingGradesOfStudent(String studentId)</b>  dà il n. degli esami falliti (cioè il n. dei failing grades) per lo studente indicato.<br>
+
+Il metodo  <b>failingGradesOfCourse(String courseName)</b>  dà il n. degli esami falliti (cioè il n. dei failing grades) per il corso indicato.<br>
+
+I 4 metodi lanciano un'eccezione se l'id dello studente o il corso sono indefiniti.
+
+
+
+
+
+</body>
+</html>

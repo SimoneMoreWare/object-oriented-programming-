@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+<style>
+<!--
+body {
+	margin: 0.5cm;
+	/*
+	font-size: 13px;
+	*/
+	}
+p   {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+    }
+b   {
+	font-family: "Courier New";
+	color: MidnightBlue;
+	background: #f8f8f8;
+	border-radius: 2pt;
+	padding: 1pt;
+/*
+    font-size=85%;
+	border: 1pt dotted silver;
+*/
+	}
+	
+i   {
+	color: Navy;
+	font-family: "Courier New";
+	}
+	
+h1  {
+	font-family: sans-serif;
+	text-align: center;
+    line-height: 1.1em;
+	}
+	
+h2  {
+	color: RoyalBlue;
+	font-family: sans-serif;
+	border-top: 1px dotted gray;
+	}
+.hint {
+    color:LightSlateGray;
+    margin-left:10ch;
+    margin-right:10ch;
+    text-indent:-5ch;
+    }
+.hint b {
+	font-family: inherit;
+	color: MidnightBlue;
+	background: inherit;
+	border-radius: inherit;
+	padding: inherit;
+    }
+.hint i {
+	color: gray;
+    }
+
+@media print {
+body {
+	font-size: 10pt;
+	}
+
+  h2 {
+  	float:left;
+    margin-top: 0;
+    padding: 5px 15px 5px 0px;
+    line-height: 0.8em;
+  	}
+}
+table {
+	float: right;
+	margin: 20px;
+	border-collapse:collapse;
+	border-bottom: 1px solid Navy;
+	border-top: 1px solid Navy;
+	}
+td, th  {
+	padding: 1px 5px 1px 5px;
+	}
+tr:nth-child(even) {
+    background-color: PowderBlue;
+    margin: 1pt solid PowderBlue;
+}
+-->
+</style>
+
+<title>Exam management</title>
+</head>
+
+<body>
+
+<h1>Exam management</h1>
+<p>
+
+Develop a program for managing university exams.
+<br>
+The classes belong to the  package <b>exams</b>;
+the main class is <b>ExamHandling</b>. Class <b>Example</b> in package <b>main</b>
+provides examples of usage of the main methods and of the required checks.
+<br>
+In all cases the exceptions are of type <b>ExamException</b>.
+
+<p>
+The <a href="http://softeng.polito.it/courses/docs/api/index.html" target="api" target="_blank">JDK documentation</a>  
+is availbale on a local server.
+</p>
+
+<h2>R1: Study plans and students</h2>
+
+
+The method <b>addStudyPlan(String name, String... courses)</b> adds a study plan; the first argument is the name of
+the plan and the following arguments are the names of the courses that compose it.<br>
+A course is considered as defined when it appears for the first time in a 
+study plan; the same course can be part of several study plans.<br>
+The method throws an exception if the plan name is duplicate.
+<p>
+The method <b>enrollStudent(String studentId, String studentName, String studyPlan)</b> records a new student
+with the given identifier and name, and links her to a study plan.<br>
+The method throws an exception in case of duplicate student id or undefined study plan.
+<p>
+
+The method <b>numberOfStudentsForStudyPlan()</b> returns the number of students for each
+study plan. The plans are sorted by name. 
+<p>
+
+The method <b>studentsForStudyPlan()</b> returns the sorted list of students
+for each study plan; the plans are sorted by name.  
+
+
+<h2>R2: Exams</h2>
+
+The method <b>openExam(String courseName)</b> opens an exam session for the given course.
+It throws an exception if the course is undefined or if there is already and open session for the course.  
+<p>
+
+A student sustaining an exam is recorded through method  <b>takeExam(String studentId, String course)</b>.
+<br>
+The method throws an exception if the course is undefined, is not in the study plan of the student,
+there is no exam session open, the student already sustained the exam in the current session, or
+the student already holds a pass grade (i.e. >= 18) for the course.
+ <p>
+ 
+The method <b>studentsWhoTookTheExam(String courseName)</b>  returns the sorted list of
+the ids of the students that sustained the exam in the current session, i.e. for whom
+a <i>takeExam()</i> was called.
+It throws an exception if the course is undefined.
+<p>
+
+
+The method <b>numberOfOpenExamSessions()</b> returns the number of exam sessions currently 
+(at the time of the invocation) open.
+<p>
+
+
+
+<h2>R3: Grading</h2>
+
+
+The method <b>giveGrade(String courseName, String studentId, int grade)</b>  allows
+assigning a grade to a student.
+The method throws an exception if the student did not sustain the exam in the currently open session
+(i.e. there was no <i>takeExam()</i> for the student), she already has a pass grade (>=18) for
+the course, or if the grade is not included in the interval 12 to 30 (extremes included).<br>
+In general a grade greater or equal to 18 is considered a pass grade, otherwise it is considered a fail grade.
+<p>
+ 
+
+
+The method <b>closeExam(String courseName)</b> closes an exam session for a course.
+It throws an exception if there is no open session for the course or if
+any student who sustained the exam did not received a grade.
+<p>
+After the closure of a session the method <i>studentsWhoTookTheExam</i> returns
+an empty list.
+
+
+<h2>R4: Stats</h2>
+
+The method <b>gradesOfStudent(String studentId)</b>  returns, for the given student,
+the name of the exams for which he got a pass grade, grouped by grade;
+the grades are sorted in descending order, the exams appear in alphabetic order. 
+<p>
+
+The method <b>gradesOfCourse(String courseName)</b>,  for the given course,
+groups by grade the ids of the students that passed the relative exam;
+the grades are in decreasing order, the student ids in alphabetic order.
+<p>
+
+The method <b>failingGradesOfStudent(String studentId)</b>  returns the number of the 
+failed exams for the given student.
+<p>
+
+The method <b>failingGradesOfCourse(String courseName)</b>  returns the number of 
+the fail grades that has been assigned for the given course.
+<p>
+
+The above four methods throw an exception if the student id or the course name are undefined.
+
+
+</body>
+</html>
