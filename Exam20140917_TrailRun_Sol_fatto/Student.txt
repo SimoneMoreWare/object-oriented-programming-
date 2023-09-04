@@ -1,4 +1,0 @@
-# Enter your identification information (Note: ID is Matricola)
-ID=
-LastName=
-FirstName=
