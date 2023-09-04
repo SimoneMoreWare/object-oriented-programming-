@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR3_Appointments
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR3_Appointments
+testPreferenceBadCode(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Invalid meeting id for preference not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadCode(TestR3_Appointments.java:51)
+
+testPreferenceBadDate(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong date for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadDate(TestR3_Appointments.java:60)
+
+testPreferenceBadSlot(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadSlot(TestR3_Appointments.java:69)
+
+testListAppointments(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing preferences
+	at it.polito.po.test.TestR3_Appointments.testListAppointments(TestR3_Appointments.java:91)
+
+testPreferenceNotOpen(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceNotOpen(TestR3_Appointments.java:77)
+
+testPreference(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong number of preferences expected:<1> but was:<-1>
+	at it.polito.po.test.TestR3_Appointments.testPreference(TestR3_Appointments.java:44)
+

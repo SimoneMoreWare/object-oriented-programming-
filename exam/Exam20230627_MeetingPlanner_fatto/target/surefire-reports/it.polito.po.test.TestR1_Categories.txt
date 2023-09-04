@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR1_Categories
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR1_Categories
+testCategoriesNoDup(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No specialities returned
+	at it.polito.po.test.TestR1_Categories.testCategoriesNoDup(TestR1_Categories.java:46)
+
+testMeetingBadCat(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testMeetingBadCat(TestR1_Categories.java:83)
+
+testUniqueID(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testUniqueID(TestR1_Categories.java:70)
+
+testMeeting(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testMeeting(TestR1_Categories.java:59)
+
+testCategories(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No specialities returned
+	at it.polito.po.test.TestR1_Categories.testCategories(TestR1_Categories.java:30)
+
+testMeetCategories(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing projects
+	at it.polito.po.test.TestR1_Categories.testMeetCategories(TestR1_Categories.java:98)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR5_Stats
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR5_Stats
+testPreferenceCount(it.polito.po.test.TestR5_Stats)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR5_Stats.testPreferenceCount(TestR5_Stats.java:64)
+
+testPreferences(it.polito.po.test.TestR5_Stats)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR5_Stats.testPreferences(TestR5_Stats.java:53)
+

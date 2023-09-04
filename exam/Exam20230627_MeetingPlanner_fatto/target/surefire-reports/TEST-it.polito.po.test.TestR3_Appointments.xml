@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.polito.po.test.TestR3_Appointments" time="0" tests="6" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/test-classes:/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/classes:/Users/mtk/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mtk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/19.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/surefire/surefirebooter6932385517466747784.jar /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/surefire 2023-06-29T12-14-55_481-jvmRun1 surefire3668407163733732551tmp surefire_06806456747162552441tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/test-classes:/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/classes:/Users/mtk/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mtk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mtk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/19.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/surefire/surefirebooter6932385517466747784.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="19.0.1"/>
+    <property name="user.name" value="mtk"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/mtk/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/7s/gr6tvnhs4_jb1fnt3r3zyc7r0000gn/T/"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="user.dir" value="/Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mtk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="19.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testPreferenceBadCode" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Invalid meeting id for preference not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown" type="java.lang.AssertionError">java.lang.AssertionError: Invalid meeting id for preference not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadCode(TestR3_Appointments.java:51)
+</failure>
+  </testcase>
+  <testcase name="testPreferenceBadDate" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Wrong date for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown" type="java.lang.AssertionError">java.lang.AssertionError: Wrong date for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadDate(TestR3_Appointments.java:60)
+</failure>
+  </testcase>
+  <testcase name="testPreferenceBadSlot" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown" type="java.lang.AssertionError">java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadSlot(TestR3_Appointments.java:69)
+</failure>
+  </testcase>
+  <testcase name="testListAppointments" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Missing preferences" type="java.lang.AssertionError">java.lang.AssertionError: Missing preferences
+	at it.polito.po.test.TestR3_Appointments.testListAppointments(TestR3_Appointments.java:91)
+</failure>
+  </testcase>
+  <testcase name="testPreferenceNotOpen" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown" type="java.lang.AssertionError">java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceNotOpen(TestR3_Appointments.java:77)
+</failure>
+  </testcase>
+  <testcase name="testPreference" classname="it.polito.po.test.TestR3_Appointments" time="0">
+    <failure message="Wrong number of preferences expected:&lt;1&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Wrong number of preferences expected:<1> but was:<-1>
+	at it.polito.po.test.TestR3_Appointments.testPreference(TestR3_Appointments.java:44)
+]]></failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR1_Cars
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR1_Cars
+testClassesNoDup(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No classes returned
+	at it.polito.po.test.TestR1_Cars.testClassesNoDup(TestR1_Cars.java:45)
+
+testCarsBadClass(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Non existent class not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR1_Cars.testCarsBadClass(TestR1_Cars.java:79)
+
+testCarsDupCode(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Duplicate car id not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR1_Cars.testCarsDupCode(TestR1_Cars.java:67)
+
+testCars(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong number of seats for new car expected:<80> but was:<-1>
+	at it.polito.po.test.TestR1_Cars.testCars(TestR1_Cars.java:55)
+
+testClasses(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No classes returned
+	at it.polito.po.test.TestR1_Cars.testClasses(TestR1_Cars.java:30)
+
+testCarClasses(it.polito.po.test.TestR1_Cars)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing normal class cars
+	at it.polito.po.test.TestR1_Cars.testCarClasses(TestR1_Cars.java:95)
+

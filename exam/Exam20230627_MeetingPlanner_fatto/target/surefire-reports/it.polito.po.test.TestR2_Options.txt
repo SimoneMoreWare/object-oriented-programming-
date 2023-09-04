@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR2_Options
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR2_Options
+testSlots(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Options.testSlots(TestR2_Options.java:34)
+
+testSlotsWrongId(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Options.testSlotsWrongId(TestR2_Options.java:69)
+
+testDailySlots(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Options.testDailySlots(TestR2_Options.java:78)
+
+testSlotsOverlap(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Options.testSlotsOverlap(TestR2_Options.java:54)
+

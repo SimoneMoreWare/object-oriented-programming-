@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR4_PassengerCheck
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR4_PassengerCheck
+testCheckSeat2(it.polito.po.test.TestR4_PassengerCheck)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing booking for seat 1A
+	at it.polito.po.test.TestR4_PassengerCheck.testCheckSeat2(TestR4_PassengerCheck.java:58)
+
+testLastStop(it.polito.po.test.TestR4_PassengerCheck)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<-1>
+	at it.polito.po.test.TestR4_PassengerCheck.testLastStop(TestR4_PassengerCheck.java:41)
+
+testCheckSeat(it.polito.po.test.TestR4_PassengerCheck)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing booking for seat 1A
+	at it.polito.po.test.TestR4_PassengerCheck.testCheckSeat(TestR4_PassengerCheck.java:50)
+

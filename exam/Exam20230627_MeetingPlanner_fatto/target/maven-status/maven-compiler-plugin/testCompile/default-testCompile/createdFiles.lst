@@ -1,0 +1,7 @@
+example/TestExample.class
+it/polito/po/test/TestR2_Schedule.class
+it/polito/po/test/TestR1_Categories.class
+it/polito/po/test/TestR5_Stats.class
+it/polito/po/test/TestR2_Options.class
+it/polito/po/test/TestR4_PatientMgmt.class
+it/polito/po/test/TestR3_Appointments.class

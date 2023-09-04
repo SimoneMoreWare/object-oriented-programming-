@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR4_PatientMgmt
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR4_PatientMgmt
+testClosePollClosed(it.polito.po.test.TestR4_PatientMgmt)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Closed poll not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR4_PatientMgmt.testClosePollClosed(TestR4_PatientMgmt.java:61)
+
+testClosePoll(it.polito.po.test.TestR4_PatientMgmt)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR4_PatientMgmt.testClosePoll(TestR4_PatientMgmt.java:50)
+

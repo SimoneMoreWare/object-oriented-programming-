@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR3_Bookings
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR3_Bookings
+testListBookings2(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing bookings
+	at it.polito.po.test.TestR3_Bookings.testListBookings2(TestR3_Bookings.java:99)
+
+testBooking(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<XD345> but was:<null>
+	at it.polito.po.test.TestR3_Bookings.testBooking(TestR3_Bookings.java:40)
+
+testListBookings(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing bookings
+	at it.polito.po.test.TestR3_Bookings.testListBookings(TestR3_Bookings.java:85)
+
+testBookingPartialOverlap(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for booking not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Bookings.testBookingPartialOverlap(TestR3_Bookings.java:71)
+
+testNonBookedSeats(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing seats
+	at it.polito.po.test.TestR3_Bookings.testNonBookedSeats(TestR3_Bookings.java:129)
+
+testBookingBadCode(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Invalid car id for booking not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Bookings.testBookingBadCode(TestR3_Bookings.java:48)
+
+testBookingBadSeat(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong seat for booking not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Bookings.testBookingBadSeat(TestR3_Bookings.java:55)
+
+testBookingFullOverlap(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for booking not detected: expected it.ffss.train.TrainException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Bookings.testBookingFullOverlap(TestR3_Bookings.java:63)
+
+testListBookingsNotPresent(it.polito.po.test.TestR3_Bookings)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing bookings
+	at it.polito.po.test.TestR3_Bookings.testListBookingsNotPresent(TestR3_Bookings.java:116)
+

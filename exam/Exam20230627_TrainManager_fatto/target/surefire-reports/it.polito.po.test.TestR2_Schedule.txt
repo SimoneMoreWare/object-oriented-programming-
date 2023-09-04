@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: it.polito.po.test.TestR2_Schedule
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR2_Schedule
+testStops(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong number of segments expected:<3> but was:<-1>
+	at it.polito.po.test.TestR2_Schedule.testStops(TestR2_Schedule.java:37)
+
+testDailySlots(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing seats
+	at it.polito.po.test.TestR2_Schedule.testDailySlots(TestR2_Schedule.java:44)
+

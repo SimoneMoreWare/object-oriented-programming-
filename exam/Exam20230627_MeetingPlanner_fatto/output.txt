@@ -1,0 +1,193 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< it.polito.oop.exam:meet >-----------------------
+[INFO] Building meet 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ meet ---
+[INFO] Deleting /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ meet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ meet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ meet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ meet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ meet ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running example.TestExample
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.02 s <<< FAILURE! - in example.TestExample
+[ERROR] testAll(example.TestExample)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError
+	at example.TestExample.testAll(TestExample.java:26)
+
+[INFO] Running it.polito.po.test.TestR1_Categories
+[ERROR] Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR1_Categories
+[ERROR] testCategoriesNoDup(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No specialities returned
+	at it.polito.po.test.TestR1_Categories.testCategoriesNoDup(TestR1_Categories.java:46)
+
+[ERROR] testMeetingBadCat(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testMeetingBadCat(TestR1_Categories.java:83)
+
+[ERROR] testUniqueID(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testUniqueID(TestR1_Categories.java:70)
+
+[ERROR] testMeeting(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR1_Categories.testMeeting(TestR1_Categories.java:59)
+
+[ERROR] testCategories(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No specialities returned
+	at it.polito.po.test.TestR1_Categories.testCategories(TestR1_Categories.java:30)
+
+[ERROR] testMeetCategories(it.polito.po.test.TestR1_Categories)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing projects
+	at it.polito.po.test.TestR1_Categories.testMeetCategories(TestR1_Categories.java:98)
+
+[INFO] Running it.polito.po.test.TestR2_Options
+[ERROR] Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR2_Options
+[ERROR] testSlots(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Options.testSlots(TestR2_Options.java:34)
+
+[ERROR] testSlotsWrongId(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Options.testSlotsWrongId(TestR2_Options.java:69)
+
+[ERROR] testDailySlots(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Options.testDailySlots(TestR2_Options.java:78)
+
+[ERROR] testSlotsOverlap(it.polito.po.test.TestR2_Options)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Options.testSlotsOverlap(TestR2_Options.java:54)
+
+[INFO] Running it.polito.po.test.TestR5_Stats
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR5_Stats
+[ERROR] testPreferenceCount(it.polito.po.test.TestR5_Stats)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR5_Stats.testPreferenceCount(TestR5_Stats.java:64)
+
+[ERROR] testPreferences(it.polito.po.test.TestR5_Stats)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR5_Stats.testPreferences(TestR5_Stats.java:53)
+
+[INFO] Running it.polito.po.test.TestR2_Schedule
+[ERROR] Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR2_Schedule
+[ERROR] testSlots(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Schedule.testSlots(TestR2_Schedule.java:34)
+
+[ERROR] testSlotsWrongId(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Schedule.testSlotsWrongId(TestR2_Schedule.java:60)
+
+[ERROR] testDailySlots(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2.0> but was:<-1.0>
+	at it.polito.po.test.TestR2_Schedule.testDailySlots(TestR2_Schedule.java:69)
+
+[ERROR] testSlotsOverlap(it.polito.po.test.TestR2_Schedule)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR2_Schedule.testSlotsOverlap(TestR2_Schedule.java:54)
+
+[INFO] Running it.polito.po.test.TestR3_Appointments
+[ERROR] Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR3_Appointments
+[ERROR] testPreferenceBadCode(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Invalid meeting id for preference not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadCode(TestR3_Appointments.java:51)
+
+[ERROR] testPreferenceBadDate(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong date for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadDate(TestR3_Appointments.java:60)
+
+[ERROR] testPreferenceBadSlot(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceBadSlot(TestR3_Appointments.java:69)
+
+[ERROR] testListAppointments(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Missing preferences
+	at it.polito.po.test.TestR3_Appointments.testListAppointments(TestR3_Appointments.java:91)
+
+[ERROR] testPreferenceNotOpen(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR3_Appointments.testPreferenceNotOpen(TestR3_Appointments.java:77)
+
+[ERROR] testPreference(it.polito.po.test.TestR3_Appointments)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Wrong number of preferences expected:<1> but was:<-1>
+	at it.polito.po.test.TestR3_Appointments.testPreference(TestR3_Appointments.java:44)
+
+[INFO] Running it.polito.po.test.TestR4_PatientMgmt
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.polito.po.test.TestR4_PatientMgmt
+[ERROR] testClosePollClosed(it.polito.po.test.TestR4_PatientMgmt)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Closed poll not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+	at it.polito.po.test.TestR4_PatientMgmt.testClosePollClosed(TestR4_PatientMgmt.java:61)
+
+[ERROR] testClosePoll(it.polito.po.test.TestR4_PatientMgmt)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at it.polito.po.test.TestR4_PatientMgmt.testClosePoll(TestR4_PatientMgmt.java:50)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TestExample.testAll:26
+[ERROR]   TestR1_Categories.testCategories:30 No specialities returned
+[ERROR]   TestR1_Categories.testCategoriesNoDup:46 No specialities returned
+[ERROR]   TestR1_Categories.testMeetCategories:98 Missing projects
+[ERROR]   TestR1_Categories.testMeeting:59
+[ERROR]   TestR1_Categories.testMeetingBadCat:83
+[ERROR]   TestR1_Categories.testUniqueID:70
+[ERROR]   TestR2_Options.testDailySlots:78 expected:<2.0> but was:<-1.0>
+[ERROR]   TestR2_Options.testSlots:34 expected:<2.0> but was:<-1.0>
+[ERROR]   TestR2_Options.testSlotsOverlap:54 Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR2_Options.testSlotsWrongId:69 Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR2_Schedule.testDailySlots:69 expected:<2.0> but was:<-1.0>
+[ERROR]   TestR2_Schedule.testSlots:34 expected:<2.0> but was:<-1.0>
+[ERROR]   TestR2_Schedule.testSlotsOverlap:54 Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR2_Schedule.testSlotsWrongId:60 Overlapping options are not allowed: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR3_Appointments.testListAppointments:91 Missing preferences
+[ERROR]   TestR3_Appointments.testPreference:44 Wrong number of preferences expected:<1> but was:<-1>
+[ERROR]   TestR3_Appointments.testPreferenceBadCode:51 Invalid meeting id for preference not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR3_Appointments.testPreferenceBadDate:60 Wrong date for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR3_Appointments.testPreferenceBadSlot:69 Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR3_Appointments.testPreferenceNotOpen:77 Wrong slot for appointment not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR4_PatientMgmt.testClosePoll:50
+[ERROR]   TestR4_PatientMgmt.testClosePollClosed:61 Closed poll not detected: expected it.polito.meet.MeetException to be thrown, but nothing was thrown
+[ERROR]   TestR5_Stats.testPreferenceCount:64
+[ERROR]   TestR5_Stats.testPreferences:53
+[INFO] 
+[ERROR] Tests run: 25, Failures: 25, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.380 s
+[INFO] Finished at: 2023-06-29T12:14:56+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project meet: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/mtk/Documents/Teaching/_OOP/Esami/20230627/consegne/s318140/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
